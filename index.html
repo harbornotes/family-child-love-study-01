@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="robots" content="noindex, nofollow">
+<title>娘の幸せな関係づくりと父親の支援方針（スマホ版）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light only;
+  --bg:#fbf6ec;
+  --paper:#fffdf8;
+  --ink:#3b3226;
+  --body:#4a4034;
+  --muted:#8a7d6b;
+  --line:#eadfcb;
+  --sage:#5b8a6a;
+  --sage-d:#3f6b4e;
+  --sage-t:#e8f1e3;
+  --peach:#e48a64;
+  --peach-d:#b9552f;
+  --peach-t:#fdebdd;
+  --sky:#4f86a3;
+  --sky-t:#e2f0f6;
+  --butter:#fff1c7;
+  --butter-d:#9a6a12;
+  --round:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;
+  --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--body);
+  font-size:15px;
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  padding:0 0 env(safe-area-inset-bottom);
+  overflow-x:hidden;
+}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px 44px}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  margin:0 -16px 26px;
+  padding:34px 22px 0;
+  background:linear-gradient(180deg,#fdeccf 0%,#fbf0da 55%,var(--bg) 100%);
+  overflow:hidden;
+}
+.hero-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.chip{
+  font-size:13px;font-weight:700;letter-spacing:.04em;
+  padding:4px 12px;border-radius:999px;line-height:1.5;
+}
+.chip.kicker{background:var(--sage);color:#fff}
+.chip.date{background:#fff;color:var(--peach-d);border:1px solid #f1d3b4}
+.hero h1{
+  font-family:var(--round);
+  font-size:25px;font-weight:900;line-height:1.5;color:var(--ink);
+  letter-spacing:.02em;
+  position:relative;z-index:2;
+}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,#ffd9a8 62%)}
+.hero svg{display:block;width:100%;height:auto;margin-top:6px}
+
+/* ---------- Section ---------- */
+.sec{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:24px 18px 22px;
+  margin-bottom:20px;
+  box-shadow:0 6px 18px rgba(120,90,40,.07);
+  position:relative;
+}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.num{
+  flex:0 0 auto;width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--round);font-weight:900;font-size:19px;color:#fff;
+  background:var(--sage);
+  box-shadow:0 0 0 5px var(--sage-t);
+}
+.num.peach{background:var(--peach);box-shadow:0 0 0 5px var(--peach-t)}
+.num.sky{background:var(--sky);box-shadow:0 0 0 5px var(--sky-t)}
+.num.sun{background:#d9a21b;box-shadow:0 0 0 5px var(--butter)}
+.num.word{width:auto;height:auto;border-radius:999px;padding:3px 13px;font-size:14px;box-shadow:none}
+.sec-head h2{
+  font-family:var(--round);font-size:20px;font-weight:900;line-height:1.5;color:var(--ink);
+}
+.lead{font-size:15px;color:var(--ink);font-weight:500;margin-bottom:16px}
+
+/* ---------- 結論 ---------- */
+.pillars{display:grid;gap:10px;margin-bottom:16px}
+.pillar{
+  display:flex;align-items:center;gap:14px;
+  background:var(--sage-t);border-radius:18px;padding:14px 16px;
+}
+.pillar i{
+  font-style:normal;flex:0 0 auto;width:32px;height:32px;border-radius:50%;
+  background:var(--sage);color:#fff;font-family:var(--round);font-weight:900;font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+}
+.pillar b{font-family:var(--round);font-size:18px;font-weight:900;color:var(--sage-d);line-height:1.4}
+.stance{
+  background:var(--butter);border-radius:18px;padding:16px 16px 16px 18px;
+  color:var(--ink);font-weight:500;position:relative;
+}
+
+/* ---------- 1 方法 ---------- */
+.way{
+  display:block;
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:14px 16px 14px;margin-bottom:12px;
+}
+.way h3{
+  font-family:var(--round);font-size:16.5px;font-weight:900;color:var(--sage-d);
+  line-height:1.5;margin-bottom:6px;
+}
+.way .why{display:flex;gap:8px;align-items:flex-start}
+.tag{
+  flex:0 0 auto;font-size:12px;font-weight:700;line-height:1.6;
+  padding:1px 9px;border-radius:999px;margin-top:3px;
+  background:var(--sage-t);color:var(--sage-d);
+}
+.note{
+  display:flex;gap:10px;align-items:flex-start;
+  background:var(--sky-t);border-radius:18px;padding:14px 16px;margin-top:4px;
+}
+.note .tag{background:#fff;color:var(--sky)}
+
+/* ---------- 2 男性像 ---------- */
+.rank{
+  display:flex;gap:0;margin-bottom:12px;border-radius:18px;overflow:hidden;
+  border:1px solid var(--line);background:#fff;
+}
+.rank .r{
+  flex:0 0 64px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:#fff;font-family:var(--round);font-weight:900;padding:10px 4px;
+}
+.rank .r small{font-size:12px;font-weight:700;opacity:.95;line-height:1.3}
+.rank .r span{font-size:22px;line-height:1.2}
+.rank.a .r{background:#d9792f}
+.rank.b .r{background:#e79a55}
+.rank.c .r{background:#efb97e}
+.rank .t{padding:12px 14px}
+.rank .t h3{font-family:var(--round);font-size:18px;font-weight:900;color:var(--ink);line-height:1.5}
+.rank .t p{margin-top:2px}
+.twin{display:grid;gap:12px;margin-top:16px}
+.box{border-radius:18px;padding:15px 16px}
+.box.hl{background:var(--sage-t)}
+.box.pl{background:#f6efe2}
+.box .tag{display:inline-block;margin:0 0 6px;background:#fff}
+.box.hl .tag{color:var(--sage-d)}
+.box.pl .tag{color:var(--butter-d)}
+
+/* ---------- 3 父親 ---------- */
+.act{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:15px 14px;margin-bottom:12px;
+}
+.act .c{
+  flex:0 0 auto;width:30px;height:30px;border-radius:50%;
+  background:var(--sky);color:#fff;font-family:var(--round);font-weight:900;font-size:15px;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.act h3{font-family:var(--round);font-size:16.5px;font-weight:900;color:#2f6784;line-height:1.55;margin-bottom:4px}
+
+/* ---------- 盲点 ---------- */
+.sec.warm{background:#fffaf0;border-color:#f3e0b6}
+.blind{
+  background:#fff;border:1px solid #f3e0b6;border-radius:18px;
+  padding:14px 16px;margin-bottom:12px;
+}
+.blind h3{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--round);font-size:17px;font-weight:900;color:var(--butter-d);line-height:1.5;margin-bottom:4px;
+}
+.blind h3 svg{flex:0 0 auto;width:24px;height:24px}
+
+/* ---------- 総括 ---------- */
+.sec.final{background:linear-gradient(180deg,#fffdf8 0%,#f1f7ec 100%);border:2px solid #cfe2c6}
+.wheel{
+  background:#fff;border:2px solid var(--sage);border-radius:18px;
+  padding:14px 16px;text-align:center;
+}
+.wheel .tag{display:inline-block;margin:0 0 6px}
+.wheel p{font-family:var(--round);font-weight:900;font-size:17px;color:var(--ink);line-height:1.65}
+.plus{
+  width:34px;height:34px;border-radius:50%;margin:-6px auto;position:relative;z-index:2;
+  background:var(--peach);color:#fff;font-family:var(--round);font-weight:900;font-size:22px;
+  display:flex;align-items:center;justify-content:center;border:3px solid #f6faf2;
+}
+.both{text-align:center;font-family:var(--round);font-weight:900;font-size:17px;color:var(--sage-d);margin:14px 0 16px}
+.policy{
+  background:var(--sage-d);color:#fff;border-radius:20px;padding:20px 18px;
+  display:grid;gap:10px;position:relative;
+}
+.policy p{color:#fff;font-size:15.5px;line-height:1.85}
+.policy p.end{font-family:var(--round);font-weight:900;color:#ffe9b8}
+.foot-art{display:block;width:100%;height:auto;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-top">
+      <span class="chip kicker">子育て・将来設計の整理図解</span>
+      <span class="chip date">2026年11月18日時点</span>
+    </div>
+    <h1>娘が<em>良い男性と出会い</em>、幸せな関係を築くための方針</h1>
+    <svg viewBox="0 0 360 120" aria-hidden="true" focusable="false">
+      <path d="M0 96 Q60 70 130 90 T260 84 T360 92 V120 H0Z" fill="#cfe2c6"/>
+      <path d="M0 106 Q80 88 160 104 T360 100 V120 H0Z" fill="#b6d4ab"/>
+      <g stroke="#5b8a6a" stroke-width="4" stroke-linecap="round" fill="none">
+        <path d="M180 108 V62"/>
+      </g>
+      <path d="M180 74 C150 74 138 56 140 42 C166 42 180 56 180 74Z" fill="#7fb08a"/>
+      <path d="M180 64 C208 64 222 46 220 32 C194 32 180 46 180 64Z" fill="#5b8a6a"/>
+      <circle cx="180" cy="56" r="0" fill="#fff"/>
+      <g fill="#f7c36a">
+        <path d="M60 30 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/>
+        <path d="M300 22 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/>
+        <path d="M268 62 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+      </g>
+      <g fill="#fff" opacity=".9">
+        <circle cx="96" cy="58" r="4"/><circle cx="318" cy="64" r="3"/><circle cx="40" cy="70" r="3"/>
+      </g>
+    </svg>
+  </header>
+
+  <!-- 結論 -->
+  <section class="sec" aria-labelledby="s0">
+    <div class="sec-head">
+      <span class="num word">要点</span>
+      <h2 id="s0">結論</h2>
+    </div>
+    <p class="lead">娘が良い男性と出会い、幸せな関係を築くためには、「教育水準」「出会いの環境」「人間関係を築く力」の3つを重視することが合理的です。</p>
+    <div class="pillars">
+      <div class="pillar"><i>1</i><b>教育水準</b></div>
+      <div class="pillar"><i>2</i><b>出会いの環境</b></div>
+      <div class="pillar"><i>3</i><b>人間関係を築く力</b></div>
+    </div>
+    <div class="stance">
+      関関同立程度の大学進学を一つの目標にする考えには賛成です。ただし、学歴だけでなく、娘自身の経済的自立と人格形成を重視することが重要です。
+    </div>
+  </section>
+
+  <!-- 1 -->
+  <section class="sec" aria-labelledby="s1">
+    <div class="sec-head">
+      <span class="num">1</span>
+      <h2 id="s1">良い男性と出会う可能性を高める方法</h2>
+    </div>
+
+    <article class="way">
+      <h3>① 一定水準以上の大学に進学する</h3>
+      <div class="why"><span class="tag">理由</span><p>娘自身の将来の選択肢が広がり、教育水準や知的関心が近い男性と出会いやすくなる</p></div>
+    </article>
+    <article class="way">
+      <h3>② 良好な就職先を目指す</h3>
+      <div class="why"><span class="tag">理由</span><p>経済的に安定した男性と接する機会が増える可能性がある</p></div>
+    </article>
+    <article class="way">
+      <h3>③ 趣味や友人関係を充実させる</h3>
+      <div class="why"><span class="tag">理由</span><p>大学・職場以外にも出会いを広げられ、人柄を時間をかけて理解できる</p></div>
+    </article>
+    <article class="way">
+      <h3>④ 小さな主体性を持つ</h3>
+      <div class="why"><span class="tag">理由</span><p>控えめでも、自分から話しかけたり誘ったりすることで、恋愛の選択肢が広がる</p></div>
+    </article>
+
+    <div class="note">
+      <span class="tag">補足</span>
+      <p>特に、控えめな性格の女性には、共通の興味を通じて継続的に交流できる環境が向いている可能性があります。</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="sec" aria-labelledby="s2">
+    <div class="sec-head">
+      <span class="num peach">2</span>
+      <h2 id="s2">どのような男性が望ましいか</h2>
+    </div>
+    <p class="lead">今回の希望を踏まえると、次の優先順位が適切だと思います。</p>
+
+    <div class="rank a">
+      <div class="r"><small>優先順位</small><span>1位</span></div>
+      <div class="t"><h3>人格</h3><p>誠実で、思いやりがあり、相手を尊重できる。</p></div>
+    </div>
+    <div class="rank b">
+      <div class="r"><small>優先順位</small><span>2位</span></div>
+      <div class="t"><h3>愛情と相性</h3><p>互いに自然に惹かれ合い、一緒にいて安心できる。</p></div>
+    </div>
+    <div class="rank c">
+      <div class="r"><small>優先順位</small><span>3位</span></div>
+      <div class="t"><h3>経済力</h3><p>経済的に自立し、平均以上の安定した生活基盤がある。</p></div>
+    </div>
+
+    <div class="twin">
+      <div class="box hl">
+        <span class="tag">最終的な判断基準</span>
+        <p>ただし、経済力や人格が一定水準以上あることを前提に、最終的には娘自身が魅力を感じ、愛情を持てる相手であることが重要です。</p>
+      </div>
+      <div class="box pl">
+        <span class="tag">学歴・勤務先の捉え方</span>
+        <p>また、高学歴・大企業勤務は経済力や職業能力を推測する材料にはなりますが、人格の良さを保証するものではありません。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="sec" aria-labelledby="s3">
+    <div class="sec-head">
+      <span class="num sky">3</span>
+      <h2 id="s3">父親として今からできること</h2>
+    </div>
+
+    <article class="act">
+      <span class="c">①</span>
+      <div>
+        <h3>学力と経済的自立の基盤を育てる</h3>
+        <p>関関同立程度を一つの目標としながら、本人の適性や希望を尊重する。大学名よりも、将来の選択肢を広げることを目的にする。</p>
+      </div>
+    </article>
+    <article class="act">
+      <span class="c">②</span>
+      <div>
+        <h3>人間関係を広げる経験を応援する</h3>
+        <p>学校、習い事、趣味などを通じて、自然に友人関係を築ける環境を用意する。控えめな性格を変える必要はないが、自分から働きかける経験は大切にする。</p>
+      </div>
+    </article>
+    <article class="act">
+      <span class="c">③</span>
+      <div>
+        <h3>自分の意思を伝えられるように育てる</h3>
+        <p>家庭でも娘の意見を尊重し、父親に反対したり、嫌なことを断ったりできる関係を築く。</p>
+      </div>
+    </article>
+    <article class="act">
+      <span class="c">④</span>
+      <div>
+        <h3>父親自身が良い人間関係の手本になる</h3>
+        <p>相手の話を聞く、意見の違いを尊重する、間違えたら謝る。愛情と支配は異なることを行動で示す。</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- 盲点 -->
+  <section class="sec warm" aria-labelledby="s4">
+    <div class="sec-head">
+      <span class="num sun word">留意点</span>
+      <h2 id="s4">特に注意したい3つの盲点</h2>
+    </div>
+
+    <article class="blind">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg>
+        学歴と人格は別物
+      </h3>
+      <p>高学歴・高収入でも、良い夫になるとは限らない。</p>
+    </article>
+    <article class="blind">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        出会いは相互選択
+      </h3>
+      <p>良い男性に出会うだけでなく、互いに好意を持ち、関係を築く力が必要。</p>
+    </article>
+    <article class="blind">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V11M12 11c0-4 3-6 7-6 0 4-3 6-7 6zM12 14c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/></svg>
+        父親の期待を押しつけない
+      </h3>
+      <p>関関同立への進学も結婚も、娘自身の幸福のための選択肢であり、達成すべき義務ではない。</p>
+    </article>
+  </section>
+
+  <!-- 総括 -->
+  <section class="sec final" aria-labelledby="s5">
+    <div class="sec-head">
+      <span class="num word">総括</span>
+      <h2 id="s5">最も重要な考え方</h2>
+    </div>
+
+    <div class="wheel">
+      <span class="tag" style="background:var(--sage-t);color:var(--sage-d)">環境の整備</span>
+      <p>「娘が良い男性と出会える環境を整えること」</p>
+    </div>
+    <div class="plus" aria-hidden="true">＋</div>
+    <div class="wheel">
+      <span class="tag" style="background:var(--sage-t);color:var(--sage-d)">内面・関係力の育成</span>
+      <p>「娘自身が幸せな関係を築ける人間に育つこと」</p>
+    </div>
+    <p class="both">の両方が重要です。</p>
+
+    <div class="policy">
+      <p>父親としては、学力・経済的自立・人間関係を築く力を育てながら、娘が自分の意思で人生を選択できるように支援する。</p>
+      <p class="end">これが現時点で最も合理的な方針だと考えます。</p>
+    </div>
+
+    <svg class="foot-art" viewBox="0 0 360 54" aria-hidden="true" focusable="false">
+      <path d="M0 40 Q90 18 180 38 T360 34 V54 H0Z" fill="#dbeacf"/>
+      <g fill="#7fb08a"><path d="M60 42 c-8-2-12-9-11-16 8 0 13 6 11 16z"/><path d="M180 44 c-8-2-12-9-11-16 8 0 13 6 11 16z"/><path d="M300 40 c-8-2-12-9-11-16 8 0 13 6 11 16z"/></g>
+    </svg>
+  </section>
+
+</div>
+</body>
+</html>
